@@ -1,4 +1,4 @@
-# Face Unlock with 2D Data
+# Face Unlock with 2D Data 🔒😉
 *A deep learning approach*
 
 All the code can be found [here](https://github.com/FrancescoSaverioZuppichini/Face-Unlock). An interactive version of this article can be downloaded from [here](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/face_detection.ipynb)
