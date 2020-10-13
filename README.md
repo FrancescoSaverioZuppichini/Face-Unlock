@@ -115,7 +115,7 @@ for (imgs, labels) in dl:
 
 
 
-![png]((https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_5_1.png?raw=True)
+![png](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_5_1.png?raw=True)
 
 
 ## Embed
@@ -209,7 +209,7 @@ for i in range(numicons):
 ```
 
 
-![png]((https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_11_0.png?raw=True)
+![png](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_11_0.png?raw=True)
 
 
 Apparently, I am not very similar to Matt or Leo, but they have something in common!
@@ -254,7 +254,7 @@ plt.plot()
 
 
 
-![png]((https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_13_1.png?raw=True)
+![png](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_13_1.png?raw=True)
 
 
 Take this image with a grain of salt. We are compresisng 512 dimensions in 2, so we are loosing lots of data.
