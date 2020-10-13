@@ -346,7 +346,7 @@ People say I am similar to Rio from *Casa de Papel*
 
 The similarity score was higher than the previous image, so I guess it is true! 
 
-Let's try with a new selphy of myself
+Let's try with a new selfie of myself
 
 ![alt](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/test4.png?raw=true)
 
