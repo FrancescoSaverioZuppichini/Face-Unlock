@@ -122,11 +122,11 @@ for (imgs, labels) in dl:
 
 Our data pipeline is ready. To compare faces and find out if two are similar, we need a way to encode them in a vector space where, if two faces are similar, the two vectors associated with them are also similar.
 
-We can use one model trained on one of the famous face dataset, such as [`vggface2`](http://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) and use the output of the last layer (latent space) before the classification head as encoding. 
+We can use one model trained on one of the famous face dataset, such as [vggface2](http://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) and use the output of the last layer (latent space) before the classification head as encoding. 
 
-A model trained on a faces dataset must have learn important features about the inputs. The last layer (just before the fully connected layers) encodes the high level features of these images. Thus, we can use it to embed our inputs in a vector space where, hopefully, similar images are close to each other.
+A model trained on a faces dataset must have learned important features about the inputs. The last layer (just before the fully connected layers) encodes the high-level features of these images. Thus, we can use it to embed our inputs in a vector space where, hopefully, similar images are close to each other.
 
-In details, we are going to use a inception resnet trained on the `vggface2` dataset. The embeddings space has `512` dimentions. 
+In detail, we are going to use a inception resnet trained on the `vggface2` dataset. The embeddings space has `512` dimensions. 
 
 
 ```python
@@ -212,9 +212,9 @@ for i in range(numicons):
 ![png](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_11_0.png?raw=True)
 
 
-Apparently, I am not very similar to Matt or Leo, but they have something in common!
+I am not very similar to Matt or Leo, but they have something in common!
 
-We can go futher and run PCA on the embeddings and project the images in a 2-D plane
+We can go further and run PCA on the embeddings and project the images in a 2-D plane
 
 
 ```python
@@ -257,14 +257,14 @@ plt.plot()
 ![png](https://github.com/FrancescoSaverioZuppichini/Face-Unlock/blob/main/article/images/output_13_1.png?raw=True)
 
 
-Take this image with a grain of salt. We are compresisng 512 dimensions in 2, so we are loosing lots of data.
+Take this image with a grain of salt. We are compressing 512 dimensions in 2, so we are losing lots of data.
 
 ## Face Unlock
 
-Okay, we have a way to find faces and to see if they are similar to each other, now we can create our face unlock algorithm.
+Okay, we have a way to find faces, and to see if they are similar to each other, now we can create our face unlock algorithm.
 
 
-My idea is to take `n` images of the allowed person, find the center in the embedding space, select a treshold and see if the cosine similarity between the center and a new image is less or bigger than it. 
+My idea is to take `n` images of the allowed person, find the center in the embedding space, select a threshold and see if the cosine similarity between the center and a new image is less or bigger than it. 
 
 
 ```python
